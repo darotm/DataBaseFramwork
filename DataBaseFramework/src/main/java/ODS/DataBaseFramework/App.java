@@ -1,5 +1,5 @@
 package ODS.DataBaseFramework;
-import java.sql.*;
+import DataBase.DBConnector;
 
 /**
  * Hello world!
@@ -9,6 +9,14 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	String url = DataSource.Constants.url;
+    	String username = DataSource.Constants.user;
+    	String password = DataSource.Constants.password;
+    	String OraDriver = DataSource.Constants.OraDriver;
+    
+    
+    //DBConnector sqlQuery = new DBConnector();
+  	DBConnector.DB(url, username, password, OraDriver);
+  	
     }
 }

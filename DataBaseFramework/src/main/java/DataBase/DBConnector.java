@@ -18,8 +18,7 @@ public class DBConnector {
 					e.printStackTrace();
 				}		
 		
-		
-	 	}
+	}
 	 
 	 public static ResultSet runSql(String sql) throws SQLException {
 			Statement sta = connect.createStatement(); 
